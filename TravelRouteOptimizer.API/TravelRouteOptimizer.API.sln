@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelRouteOptimizer.Utils"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelRouteOptimizerConsole", "..\TravelRouteOptimizerConsole\TravelRouteOptimizerConsole.csproj", "{0641B85E-5A93-432E-A534-A84A9B9850BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelRouteOptimizerTests", "..\TravelRouteOptimizerTests\TravelRouteOptimizerTests.csproj", "{4987786E-8244-4AF8-B11E-BE2C3392111B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0641B85E-5A93-432E-A534-A84A9B9850BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0641B85E-5A93-432E-A534-A84A9B9850BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0641B85E-5A93-432E-A534-A84A9B9850BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4987786E-8244-4AF8-B11E-BE2C3392111B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4987786E-8244-4AF8-B11E-BE2C3392111B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4987786E-8244-4AF8-B11E-BE2C3392111B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4987786E-8244-4AF8-B11E-BE2C3392111B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
