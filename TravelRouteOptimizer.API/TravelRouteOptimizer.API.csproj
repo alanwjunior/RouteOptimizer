@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TravelRouteOptimizer.Utils\TravelRouteOptimizer.Utils.csproj" />
+    <ProjectReference Include="..\TravelRouteOptimizer\TravelRouteOptimizer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+
+</Project>
