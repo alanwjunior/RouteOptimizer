@@ -26,15 +26,37 @@ namespace TravelRouteOptimizer.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSwaggerGen(c => {
+
+                c.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "Travel Route Optimizer API",
+                        Version = "v1",
+                        Description = "API Rest to calculate the best path given a  routes list and an origin and destination.",
+                        Contact = new Microsoft.OpenApi.Models.OpenApiContact
+                        {
+                            Name = "Alan Junior",
+                            Url = new System.Uri("https://github.com/alanwjunior")
+                        }
+                    });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
+        {   
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Travel Route Optimizer API V1");
+            });
+
 
             app.UseHttpsRedirection();
 
